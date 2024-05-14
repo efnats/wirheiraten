@@ -11,35 +11,42 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Georgia', serif;
-            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
-            color: #333;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive; /* Pixel font */
+            background: linear-gradient(to bottom, #000428, #004e92);
         }
         .container {
             text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .pixel-art {
+            width: 300px;
+            height: 300px;
+            background: url('your-pixel-art-image.png') no-repeat center center;
+            background-size: contain;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+            font-size: 2em;
+            margin: 0;
+            text-shadow: 2px 2px #000;
         }
         p {
             font-size: 1.5em;
-            color: #666;
-            margin: 0.5em 0;
+            margin: 10px 0 0;
+            text-shadow: 2px 2px #000;
         }
-        .languages {
-            margin-top: 1.5em;
-            font-size: 1em;
-            color: #333;
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: url('https://fonts.gstatic.com/s/pressstart2p/v9/e3t4euqBzjwvEjQ3WkI1K0qPoD1D2UVe2WU.woff2') format('woff2');
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="pixel-art"></div>
         <h1>Coming Soon</h1>
-        <p>Our wedding invitation page is under construction.</p>
-        <p>Die Einladung zur Hochzeit von Marina und Stefan ist in Bearbeitung.</p>
+        <p>Marina & Stefan</p>
+    </div>
+</body>
+</html>
